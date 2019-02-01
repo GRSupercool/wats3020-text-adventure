@@ -10,17 +10,27 @@ let currentPage = null;
 ////////////////////////////////////////////////////////////////////////////////
 
 // TODO: Prompt the user for their name. Store the name in the variable `playerName`.
+playerName=window.prompt("What is your name?","becky");
 
 
 
 // TODO: Create a function called `getCurrentPage()`. It should accept one
 // parameter, which is the `slug` for the current page. This function will fetch
 // the current page and return a page object using the `slug` value for a key.
+function getCurrentPage(){
+    
+}
+    
+
 
 
 
 // TODO: Create a function called `recordChoice()` that will accept a `slug`
 // parameter and add it to the `choiceList` Array (probably using `push()`).
+
+function recordChoice(){
+    
+}
 
 
 
@@ -38,6 +48,13 @@ let currentPage = null;
 //     function (and give it the `slug` as a parameter).
 //  3. It should invoke the `updatePage()` function (and give it the
 //     `currentPage` object as a parameter).
+
+
+function changePage(slug){
+    recordChoice(slug);
+   currentPage= getCurrentPage(slug);
+   updatePage(currentPage);
+}
 
 
 
